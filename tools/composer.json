@@ -1,0 +1,15 @@
+{
+    "name": "issl/sso-bundle-tools",
+    "description": "QA tools of the bundle, isolated from its dependencies.",
+    "type": "project",
+    "license": "proprietary",
+    "require": {
+        "friendsofphp/php-cs-fixer": "^3.90",
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "phpstan/phpstan-symfony": "^2.0"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

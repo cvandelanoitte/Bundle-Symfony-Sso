@@ -1,0 +1,15 @@
+includes:
+    - tools/vendor/phpstan/phpstan-phpunit/extension.neon
+    - tools/vendor/phpstan/phpstan-phpunit/rules.neon
+    - tools/vendor/phpstan/phpstan-symfony/extension.neon
+
+parameters:
+    level: max
+    paths:
+        - src
+        - config
+        - tests
+    tmpDir: .phpstan.cache
+    # The bundle code runs with the dependencies of vendor/, not of tools/.
+    bootstrapFiles:
+        - vendor/autoload.php
